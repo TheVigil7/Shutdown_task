@@ -7,8 +7,7 @@ I was asked by the Office of Sustainability to look into energy saving and cost-
 These were taken to a board meeting by my boss and it was decided to move forward with the project.
 
 Step 2: Proof of concept
-The projects goal was to shutdown computers when students weren't using them. This proved to be a challenge since windows task scheduler did not have enough advanced functions
-to test for an idle state while also checking the time of day and ensuring that the computer wouldn't shutdown in the middle of a students essay.
+The projects goal was to shutdown computers when students weren't using them. This proved to be a challenge since windows task scheduler did not have enough advanced functions to test for an idle state while also checking the time of day and ensuring that the computer wouldn't shutdown in the middle of a students essay.
 In PROJECT RESEARCH there is also a short .vbs script to test how vbScript handles pop-ups.
 
 Step 3: The Program
@@ -17,9 +16,7 @@ I do not have formal training in programming, and I had never even seen vbScript
 Shutdown_task is initiated by windows task scheduler after 15 minutes of idle time, this task runs 24/7.
 Once initiated, Shutdown_task checks the time of day, IF between 12am and 7am it continues, ELSE it exits the program.
 IF the program continues it sends the user a popup allowing them a set amount of time to cancel automatic shutdown.
-For each CASE, a line of text is sent to a log file. This log file was for debugging purposes to see what actions the computers
-were taking and when. However, the log file could easily be manipulated to be exported into an excel table to record data on when
-each individual computer is in use. This data is useful to administrators to see lab traffic and could be used in budgeting talks
-and to track the wear and tear of the computers.
+For each CASE, a line of text is sent to a log file. This log file was for debugging purposes to see what actions the computers were taking and when. However, the log file could easily be manipulated to be exported into an excel table to record data on when
+each individual computer is in use. This data is useful to administrators to see lab traffic and could be used in budgeting talks and to track the wear and tear of the computers.
 
 This simple program is installed on several hundred computers at Western Washington University right now and is saving energy and earning the university credit from the power company.
